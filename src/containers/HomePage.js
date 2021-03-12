@@ -18,10 +18,12 @@ function HomePage() {
     return (
         <>
             <Headerdiv></Headerdiv>
+            <div>
                 <Appbar></Appbar>   
                 <ContentDiv offsetY={offsetY}></ContentDiv>
                 <ProyectosDiv></ProyectosDiv>
                 <Footerdiv/>
+            </div>
         </>
     )
 }
