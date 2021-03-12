@@ -1,13 +1,13 @@
 .sliderContainer {
     position: relative;
-    min-height: 110vh;
+    min-height: 100%;
     margin: 0 auto;
     width: 92%;
 }
 .sliderWrapper {
     position: absolute;
     display: flex;
-    min-height: 110vh;
+    min-height: 100%;
     transition: transform .8s cubic-bezier(0.445, 0.05, 0.55, 0.95); 
     top:0;
     left: 0;

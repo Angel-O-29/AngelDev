@@ -20,7 +20,7 @@
     transform: translateY(0);
     opacity: 1;
 }
-/*------------------------------------------------------------------------------------------------------------titulos */
+/*------------------------------------------------------------------------------------------------------------titles */
 .sliderWrapper > div > h2  {
     opacity: 0;
     
@@ -43,7 +43,7 @@
     transform: translateY(0);
     opacity: 1;
 }
-/*---------------------------------------------------------------------------------------------------------------------- textos */
+/*---------------------------------------------------------------------------------------------------------------------- texts */
 .sliderWrapper > div > p  {
     opacity: 0;
     
@@ -64,5 +64,34 @@
 .active-element-2 > #animateSliderElement-2 > p  {
     
     transform: translateY(0);
+    opacity: 1;
+}
+/*---------------------------------------------------------------------------------------------------------------------- buttons */
+.sliderWrapper > div > nav > a:nth-child(1) {
+    opacity: 0;
+    
+    transform: translateX(-1500px);
+    transition: opacity .8s linear, transform .8s linear
+}
+.sliderWrapper > div > nav > a:nth-child(2) {
+    opacity: 0;
+    
+    transform: translateX(1500px);
+    transition: opacity .8s linear, transform .8s linear
+}
+.active-element-0 > #animateSliderElement-0 > nav > a  {
+    
+    transform: translateX(0);
+
+    opacity: 1;
+}
+.active-element-1 > #animateSliderElement-1 > nav > a  {
+    
+    transform: translateX(0);
+    opacity: 1;
+}
+.active-element-2 > #animateSliderElement-2 > nav > a  {
+    
+    transform: translateX(0);
     opacity: 1;
 }

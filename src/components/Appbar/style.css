@@ -23,7 +23,12 @@
 
 }
 .appbar:hover {
-    height: 270px;
+    height: 250px;
+}
+@media only screen and (min-width: 810px) {
+    .appbar:hover {
+        height: 6.5rem;
+    }
 }
 .titulo {
     font-size: 4rem;
