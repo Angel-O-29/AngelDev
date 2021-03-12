@@ -1,6 +1,7 @@
 .contentdiv {
     width: 95%;
     min-height: 70vh;
+    overflow: hidden;
     margin: 2rem auto;
     position: relative;
 }
