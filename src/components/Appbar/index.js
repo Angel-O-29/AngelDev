@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 import './style.css'
 
 function Appbar() {
@@ -7,10 +8,10 @@ function Appbar() {
             <h1 className='titulo'>Angel<span>DEV</span></h1>
             <a href='#!' className='menu_movil'>menu</a>
             <nav className='navegacion '>
-                <div><a href='#info'>¿Quien Soy?</a></div>
-                <div><a href='#habilidades'>Habilidades y <br/> Conocimientos</a></div>
-                <div><a href='#proyectos'>Proyectos anteriores</a></div>
-                <div><a href='#contacto'>Contacto</a></div>
+                <div><Link activeClass="active" spy={true} smooth={true} offset={-65} duration={50} to='info'>¿Quien soy?</Link></div>
+                <div><Link activeClass="active" spy={true} smooth={true} offset={-65} duration={50} to='habilidades'>Habilidades y <br/> Conocimientos</Link></div>
+                <div><Link activeClass="active" spy={true} smooth={true} offset={-65} duration={50} to='proyectos'>Proyectos anteriores</Link></div>
+                <div><Link activeClass="active" spy={true} smooth={true} duration={50} to='contacto'>Contacto</Link></div>
                 
                 
                 
