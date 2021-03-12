@@ -1,0 +1,53 @@
+.sliderContainer {
+    position: relative;
+    min-height: 110vh;
+    margin: 0 auto;
+    width: 92%;
+}
+.sliderWrapper {
+    position: absolute;
+    display: flex;
+    min-height: 110vh;
+    transition: transform .8s cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+    top:0;
+    left: 0;
+}
+@media only screen and (min-width: 810px) {
+    .sliderContainer {
+        min-height: 90vh;
+    }
+    .sliderWrapper {
+        min-height: 90vh;
+    }
+}
+.sliderCont > div {
+    flex: 1 0;
+}
+.sliderButton {
+    display: block;
+    position: absolute;
+    background: none;
+    color: wheat;
+    
+    border: 1px solid rgba(255, 255, 255, 0.502);
+    border-bottom-color:rgb(52, 52, 52 , 0.5);
+    border-right-color:rgb(52, 52, 52, 0.5);
+    border-radius: 10rem;
+    height: 10rem;
+    top: 50%;
+    outline: none;
+}
+
+.sliderButton:hover{
+    cursor: pointer;
+}
+.sliderButton:active{
+    background-color: rgba(255, 255, 255, 0.126);
+}
+
+.prevButton {
+    left: 3%;
+}
+.nextButton {
+    right: 3%;
+}

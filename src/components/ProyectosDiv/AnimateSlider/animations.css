@@ -1,0 +1,68 @@
+.sliderWrapper > div {
+    overflow: hidden;
+}
+/*--------------------------------------------------------------------------------------------------------------elementos generales*/
+.sliderWrapper > div > div {
+    opacity: 0;
+    transform: translateY(-500px);
+    transition: opacity .8s linear, transform .8s linear
+}
+.active-element-0 > #animateSliderElement-0 > div {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+.active-element-1 > #animateSliderElement-1 > div {
+    transform: translateY(0);
+    opacity: 1;
+}
+.active-element-2 > #animateSliderElement-2 > div {
+    transform: translateY(0);
+    opacity: 1;
+}
+/*------------------------------------------------------------------------------------------------------------titulos */
+.sliderWrapper > div > h2  {
+    opacity: 0;
+    
+    transform: translateY(500px);
+    transition: opacity .8s linear, transform .8s linear
+}
+.active-element-0 > #animateSliderElement-0 > h2 {
+    
+    transform: translateY(0);
+
+    opacity: 1;
+}
+.active-element-1 > #animateSliderElement-1 > h2 {
+    
+    transform: translateY(0);
+    opacity: 1;
+}
+.active-element-2 > #animateSliderElement-2 > h2  {
+    
+    transform: translateY(0);
+    opacity: 1;
+}
+/*---------------------------------------------------------------------------------------------------------------------- textos */
+.sliderWrapper > div > p  {
+    opacity: 0;
+    
+    transform: translateY(500px);
+    transition: opacity .8s linear, transform .8s linear
+}
+.active-element-0 > #animateSliderElement-0 > p {
+    
+    transform: translateY(0);
+
+    opacity: 1;
+}
+.active-element-1 > #animateSliderElement-1 > p {
+    
+    transform: translateY(0);
+    opacity: 1;
+}
+.active-element-2 > #animateSliderElement-2 > p  {
+    
+    transform: translateY(0);
+    opacity: 1;
+}

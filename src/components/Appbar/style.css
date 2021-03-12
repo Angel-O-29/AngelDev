@@ -1,0 +1,132 @@
+.appbar {
+    position: fixed;
+    z-index: 300;
+    width: 100vw;
+    top: 0;
+    max-height: 6.5rem;
+    -webkit-box-shadow: inset 0px -0px 70px 0px rgba(181, 213, 255, 0.2);
+    -moz-box-shadow: inset 0px -0px 70px 0px rgba(181,213,255,0.2);
+    box-shadow: inset 0px -0px 70px 0px rgba(181,213,255,0.2);
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282c34+0,2b3d51+98 */
+    background: rgb(40,44,52); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(40,44,52,1) 0%, rgba(43,61,81,1) 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,44,52,1) 0%,rgba(43,61,81,1) 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,44,52,1) 0%,rgba(43,61,81,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282c34', endColorstr='#2b3d51',GradientType=0 ); /* IE6-9 */
+    color: white;        
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+
+}
+.appbar:hover {
+    max-height: 500px;
+}
+.titulo {
+    font-size: 4rem;
+    margin: 0;
+    margin-top: .5rem;
+    height: 6.5rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    flex: 0 0 calc(70% - 1rem);
+}
+.titulo span {
+    font-weight: 800;
+}
+.menu_movil {
+    transition: background-color .3s linear;
+    display: block;
+    max-width: 4rem;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.502);
+    border-bottom-color:rgb(52, 52, 52);
+    border-right-color:rgb(52, 52, 52);
+    border-radius: 1rem;
+    color: white;
+    padding-top: 1.2rem;
+    min-height: 4rem;
+    margin-right: 5rem;
+    flex: 0 0 calc(30% - 1rem);
+}
+.appbar:hover > .menu_movil {
+    background-color: rgba(255, 255, 255, 0.215);
+}
+
+.navegacion {
+    flex: 1 0 100%;
+}
+.activo {
+    height: 100%;
+}
+@media only screen and (min-width: 810px) {
+    .titulo {
+        flex: 0 0 calc(40% - 1rem);
+        margin: 0;
+        margin-top: .5rem;
+        flex-wrap: nowrap;
+    }
+    .appbar {
+        height: 6.5rem;
+
+    }
+    .menu_movil{
+        display: none;
+    }
+    .navegacion {
+        display: flex;
+        height: 6.5rem;
+        font-family: 'Play', sans-serif;
+        justify-content: space-evenly;
+        flex: 0 0 calc(60% - 1rem);
+    }
+}
+.navegacion > div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.navegacion > div > a {
+    z-index: 2;
+    display: block;
+    line-height: 20px;
+    padding: 10px 0;
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+}
+@media only screen and (min-width: 810px) {
+    .navegacion > div > a {
+        display: block;
+        line-height: 20px;
+        padding: 0;
+        margin: 6% 0;
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        transition: all .3s ease-in-out;
+    }
+}
+.navegacion > div::after {
+    content:'';
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all .3s ease;
+}
+.navegacion >div:hover::after {
+    height: 100%;
+}
+.navegacion >div > a:hover {
+    font-size: 2.2rem;
+}

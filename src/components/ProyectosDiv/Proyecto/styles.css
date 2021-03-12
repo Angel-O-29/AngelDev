@@ -1,0 +1,69 @@
+.proyectoCont {
+    max-height: 110vh;
+    width: 92vw;
+    padding: 4rem 1rem;
+    border: 1px solid grey;
+}
+@media only screen and (min-width: 810px) {
+    .proyectoCont {
+        height: 90vh;
+    }
+}
+.proyectoCont > h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.proyectoCont > p {
+    font-size: 1.5rem;
+}
+/*nav proj*/
+.proyectoCont > .linksproj {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+}
+.proyectoCont > .linksproj > a {
+    display: block;
+    background: black;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    border: 1px solid white;
+    border-bottom-color:rgb(52, 52, 52);
+    border-right-color:rgb(52, 52, 52);
+    box-shadow: inset 0px -0px 70px 0px rgba(181, 213, 255, 0.2);;
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (min-width: 810px) {
+    .proyectoCont > .linksproj > a {
+        display: block;
+        background: black;
+        padding: 1.5rem 3rem;
+        font-family: 'Play', sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/*imagen*/ 
+
+.imageproj {
+    background-color: white;
+    width: 60vw;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+}
+@media only screen and (min-width: 810px) {
+
+    .imageproj {
+    width: 75vw;
+    height: 50vh;
+}
+}

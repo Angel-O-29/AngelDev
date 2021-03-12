@@ -1,0 +1,12 @@
+.contenedor {
+    width: 92%;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 810px) {
+    .contenedor {
+        width: 95%;
+    }
+}
+.no_margin {
+    margin: 0
+}

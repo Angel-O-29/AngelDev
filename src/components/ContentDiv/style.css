@@ -1,0 +1,85 @@
+.contentdiv {
+    width: 95%;
+    min-height: 70vh;
+    margin: 2rem auto;
+    position: relative;
+}
+.circle {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.contentdiv_back {
+    position: absolute;
+    z-index: 0;
+
+}
+.contentdiv_title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+.contentdiv_cont {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*back*/
+
+.one {
+    top: 10%;
+    right: 50%;
+}
+.two {
+    top: 20%;
+    right: 10%;
+}
+.three {
+    bottom: 40%;
+    right: 20%;
+}
+.four {
+    top: 50%;
+    left: 20%;
+}
+.five {
+    top: 80%;
+    left: 0%;
+}
+.six {
+    top: 20%;
+    left: 10%;
+    height: 100px;
+    width: 100px;
+}
+.seven {
+    bottom: 10%;
+    right: 10%;
+    height: 100px;
+    width: 100px;
+}
+.eight {
+    top: 40%;
+    right: 40%;
+    height: 100px;
+    width: 100px;
+}
+.nine {
+    top: 10%;
+    right: 30%;
+    height: 100px;
+    width: 100px;
+}
+.ten {
+    bottom: 10%;
+    left: 30%;
+    height: 100px;
+    width: 100px;
+}
+.eleven {
+    bottom: 20%;
+    right: 35%;
+}

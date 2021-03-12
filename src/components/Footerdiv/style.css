@@ -1,0 +1,57 @@
+.footerdiv {
+    height: 20rem;
+    background-color: rgb(12, 17, 26);
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282c34+0,2b3d51+98 */
+        background: rgb(40,44,52); /* Old browsers */
+        background: -moz-linear-gradient(top,   rgb(12, 17, 26) 0%, rgb(11, 15, 23) 98%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgb(12, 17, 26) 0%, rgb(3, 4, 6) 98%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,   rgb(12, 17, 26) 0%, rgb(3, 4, 6) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.footerdiv > div {
+    height: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 810px) {
+    .footerdiv {
+        height: 20rem;
+    }
+    .footerdiv > div {
+        padding-top: 3rem;
+        height: 100%;
+    }
+}
+.footerdiv > div  h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+.footertext {
+    margin: auto 0 1rem 0;
+}
+/*redes*/
+.redesCont {
+    height: 100%;
+}
+@media only screen and (min-width: 810px) {
+    .footerdiv > div  h3 {
+        font-size: 3rem;
+    }
+}
+.redesCont > div > p {
+    font-size: 1.3rem;
+    font-style: oblique;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes > a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}

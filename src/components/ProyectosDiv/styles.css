@@ -1,0 +1,10 @@
+.proyectos_slider {
+    min-height: 110vh;
+    background-color: rgba(0, 0, 0, 0.509);
+    overflow-x: hidden;
+    }
+@media only screen and (min-width: 810px) {
+    .proyectos_slider {
+        min-height: 90vh;
+        }
+}
