@@ -11,8 +11,11 @@ class AnimateSlider extends Component {
             actualIndex : this.props.initialIndex
         }
     }
+    shouldComponentUpdate(nextProps, nextState) {
+        return (nextProps !== this.props || nextState !== this.state)
+    }
+    
     handlePrev = () => {
-        console.log('prev')
         const {actualIndex} = this.state
         if(actualIndex > 0) {
             this.setState({
@@ -21,7 +24,6 @@ class AnimateSlider extends Component {
         }
     }
     handleNext = () => {
-        console.log('Next')
         const {actualIndex} = this.state
         if(actualIndex < this.state.arrayLength-1) {
             this.setState({
@@ -30,11 +32,11 @@ class AnimateSlider extends Component {
         }
     }
     render() {
-        const {children, styles} = this.props;
+        const {children} = this.props;
         const {actualIndex, arrayLength} = this.state
         const offset = (actualIndex/arrayLength) *100
         return (
-            <div className={`sliderContainer`} style={styles}>
+            <div className={`sliderContainer`}>
                 <div className={`sliderWrapper active-element-${actualIndex}`} style={{transform: `translateX(-${offset}%)`}}>
                     {children}
                 </div>
