@@ -30,11 +30,11 @@ class AnimateSlider extends Component {
         }
     }
     render() {
-        const {children} = this.props;
+        const {children, styles} = this.props;
         const {actualIndex, arrayLength} = this.state
         const offset = (actualIndex/arrayLength) *100
         return (
-            <div className={`sliderContainer`}>
+            <div className={`sliderContainer`} style={styles}>
                 <div className={`sliderWrapper active-element-${actualIndex}`} style={{transform: `translateX(-${offset}%)`}}>
                     {children}
                 </div>

@@ -55,3 +55,19 @@
     color: white;
     font-size: 3rem;
 }
+/*animaciones*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotate-icon:hover {
+    animation: rotate-icon-spin normal 1s linear;
+  }
+}
+
+@keyframes rotate-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

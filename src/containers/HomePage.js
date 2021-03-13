@@ -21,7 +21,7 @@ function HomePage() {
             <div>
                 <Appbar></Appbar>   
                 <ContentDiv offsetY={offsetY}></ContentDiv>
-                <ProyectosDiv></ProyectosDiv>
+                <ProyectosDiv offsetY={offsetY}></ProyectosDiv>
                 <Footerdiv/>
             </div>
         </>

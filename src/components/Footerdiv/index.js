@@ -10,9 +10,9 @@ export default function Footerdiv() {
                     <h3> Redes Sociales:</h3>
                     <div>
                         <nav className='redes'>
-                            <a href='#!'>LIN</a>
-                            <a href='#!'>TW</a>
-                            <a href='#!'>F</a>
+                            <a className='rotate-icon' href='#!'>LIN</a>
+                            <a className='rotate-icon' href='#!'>TW</a>
+                            <a className='rotate-icon' href='#!'>F</a>
                         </nav>
                         <p> o envia un correo a 'angeloluishidalgo@gmail.com'</p>
                     </div>

@@ -3,10 +3,21 @@ import ContentElement from './ContentElement'
 import './style.css'
 
 export default function ContentDiv({offsetY}) {
+    console.log(offsetY)
+    var styles = {
+        opacity: 0,
+        transform:'translateY(500px)'
+    }
+    if (offsetY >= 343 ) {
+        styles = {
+            opacity: 1,
+            transform:'translateY(00px)'
+        }
+    }
     return (
         <div id='habilidades' className='contentdiv'>
             <h2  className='contentdiv_title '>Habilidades Y Conocimientos</h2>
-            <div className='contentdiv_cont '>
+            <div className='contentdiv_cont '  style={styles} >
                 <ContentElement key='content1' title='Tecnologías' skills={['hola', 'como', 'estas']}/>
                 <ContentElement key='content2' title='Herramientas' skills={['hola', 'como', 'estas']}/>
                 <ContentElement key='content3' title='Habilidades' skills={['hola', 'como', 'estas']}/>

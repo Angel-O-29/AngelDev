@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './style.css'
 
 export default function Headerdiv() {
+    const [styles, setStyles ] = useState({
+        opacity: 0,
+        transform:'translateY(500px)'
+    })
+    useEffect(() => {
+        window.setTimeout(()=> {setStyles({
+            opacity: 1,
+            transform:'translateY(00px)'
+        })}, 100)
+        
+    }, [])
     return (
         <header id='info' >
             <div className='back_img'>
-                <div className='header_cont contenedor'>
+                <div className='header_cont contenedor' style={styles}>
                     <div>
                         <div className='header_img'>AD</div>
                         <div>

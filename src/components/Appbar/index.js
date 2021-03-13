@@ -19,5 +19,5 @@ function Appbar() {
         </div>
     )
 }
-
-export default Appbar
+const AppbarMemo = React.memo(Appbar)
+export default AppbarMemo
