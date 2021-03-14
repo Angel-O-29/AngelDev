@@ -48,12 +48,17 @@
 
 .redes {
     display: flex;
+    margin-bottom: 2.5rem;
     justify-content: space-evenly;
 }
 .redes > a {
     text-decoration: none;
     color: white;
-    font-size: 3rem;
+    transition: color .3s linear;
+    font-size: 3.5rem;
+}
+.redes > a:hover {
+    color: rgba(43,61,81,1);
 }
 /*animaciones*/
 

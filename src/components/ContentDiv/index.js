@@ -3,7 +3,6 @@ import ContentElement from './ContentElement'
 import './style.css'
 
 export default function ContentDiv({offsetY}) {
-    console.log(offsetY)
     var styles = {
         opacity: 0,
         transform:'translateY(500px)'
@@ -30,7 +29,7 @@ export default function ContentDiv({offsetY}) {
                 <span className='circle contentdiv_back six' style={{transform: `translateX(${-(709 - offsetY) * 0.8}px)` }} ></span>
                 <span className='circle contentdiv_back seven' style={{transform: `translateX(${(709 - offsetY) * 0.8}px)` }} ></span>
                 <span className='circle contentdiv_back eight' style={{transform: `translateX(${(709 - offsetY) * 0.6}px)` }} ></span>
-                <span className='circle contentdiv_back nine' style={{transform: `translateX(${-(709 - offsetY) * 0.2}px)` }} ></span>
+                <span className='circle contentdiv_back nine' style={{transform: `translateX(${-(709 - offsetY) * 0.5}px)` }} ></span>
                 <span className='circle contentdiv_back ten' style={{transform: `translateX(${(709 - offsetY) * 1.1}px)` }} ></span>
                 <span className='circle contentdiv_back eleven' style={{transform: `translateX(${-(709 - offsetY) * 0.3}px)` }} ></span>
         </div>

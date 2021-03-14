@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, /*animateScroll as scroll */} from "react-scroll";
 import './style.css'
 
 function Appbar() {
+    const [menuMobile, setmenuMobile] = useState('');
+    const handleMenu = () => {
+        if(menuMobile === '') {
+            setmenuMobile('menu_mobile_open')
+        } else {
+            setmenuMobile('')
+        }
+    }
     return (
-        <div className='appbar'>
+        <div className={`appbar ${menuMobile}`}>
             <h1 className='titulo'>Angel<span>DEV</span></h1>
-            <a href='#!' className='menu_movil'>menu</a>
+            <button onClick={handleMenu} type='button' href='#!' className='menu_mobile'><FontAwesomeIcon icon='bars' /></button>
             <nav className='navegacion '>
                 <div><Link activeClass="active" spy={true} smooth={true} offset={-65} duration={50} to='info'>¿Quien soy?</Link></div>
                 <div><Link activeClass="active" spy={true} smooth={true} offset={-65} duration={50} to='habilidades'>Habilidades y <br/> Conocimientos</Link></div>

@@ -22,7 +22,7 @@
     transition: all .5s ease-in-out;
 
 }
-.appbar:hover {
+.menu_mobile_open {
     height: 250px;
 }
 @media only screen and (min-width: 810px) {
@@ -42,9 +42,12 @@
 .titulo span {
     font-weight: 800;
 }
-.menu_movil {
+.menu_mobile {
     transition: background-color .3s linear;
+    outline: none;
     display: block;
+    background-color: transparent;
+    font-size: 2rem;
     max-width: 4rem;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.502);
@@ -52,12 +55,12 @@
     border-right-color:rgb(52, 52, 52);
     border-radius: 1rem;
     color: white;
-    padding-top: 1.2rem;
+    padding: 0;
     min-height: 4rem;
     margin-right: 5rem;
     flex: 0 0 calc(30% - 1rem);
 }
-.appbar:hover > .menu_movil {
+.menu_mobile_open > .menu_mobile {
     background-color: rgba(255, 255, 255, 0.215);
 }
 
@@ -78,7 +81,7 @@
         height: 6.5rem;
 
     }
-    .menu_movil{
+    .menu_mobile{
         display: none;
     }
     .navegacion {

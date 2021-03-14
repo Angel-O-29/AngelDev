@@ -32,7 +32,7 @@ class AnimateSlider extends Component {
         }
     }
     render() {
-        const {children} = this.props;
+        const {children, nextButton = 'next', prevButton = 'prev'} = this.props;
         const {actualIndex, arrayLength} = this.state
         const offset = (actualIndex/arrayLength) *100
         return (
@@ -40,8 +40,8 @@ class AnimateSlider extends Component {
                 <div className={`sliderWrapper active-element-${actualIndex}`} style={{transform: `translateX(-${offset}%)`}}>
                     {children}
                 </div>
-                <button onClick={this.handleNext} className='sliderButton nextButton' type='button'>next</button>
-                <button onClick={this.handlePrev} className='sliderButton prevButton' type='button'>prev</button>
+                <button onClick={this.handleNext} className='sliderButton nextButton' type='button'>{nextButton}</button>
+                <button onClick={this.handlePrev} className='sliderButton prevButton' type='button'>{prevButton}</button>
             </div>
         );
     }

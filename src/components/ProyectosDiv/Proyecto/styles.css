@@ -37,6 +37,12 @@
     text-decoration: none;
     color: white;
 }
+.proyectoCont > .linksproj > a:hover {
+    background-color: rgba(0, 0, 0, 0.523);
+    border: 1px solid white;
+    border-top-color:rgb(52, 52, 52);
+    border-left-color:rgb(52, 52, 52);
+}
 @media only screen and (min-width: 810px) {
     .proyectoCont > .linksproj > a {
         display: block;
@@ -57,7 +63,7 @@
     margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
-    height: 50vh;
+    height: 40vh;
     min-height: 40rem;
 }
 @media only screen and (min-width: 810px) {
@@ -65,5 +71,6 @@
     .imageproj {
     width: 75vw;
     height: 50vh;
+    min-height: 00rem;
 }
 }
